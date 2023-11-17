@@ -1,0 +1,30 @@
+/**
+ * This code calls a method that runs a loop that adds 18 to a starting int
+ * and then prints the new int. The  loop runs 6 times
+ */
+public class Simple_Loops 
+
+{
+
+	public static void main(String[] args) 
+	
+{
+		// call method
+		countSomeNums();
+		
+	}
+
+	// count up from -4 to 86 by 18
+	private static void countSomeNums() {
+		// i is the starting variable
+		// runs 6 times, printing the newest int value each time
+		for (int i = -4; i <= 86; i += 18)
+		
+{
+			
+      //print the new int
+			System.out.println(i);
+			
+		}
+	}
+}
