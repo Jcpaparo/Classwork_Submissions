@@ -1,0 +1,58 @@
+/**
+ * This class is a cake and functions for the cake
+ * It can return flavor, return layers, set new flavors, tell you the cake is good, and add a layer to the cake
+ */
+public class Cake 
+{
+	//establish string for flavor
+	String flavor = new String();
+	//establish int for layers
+	int layer;
+	//make a cake with the flavor and amount of layers they request
+	public Cake (String a, int l)
+	{
+		//the flavor is equal to whatever they input
+		this.layer = l;
+		//layer amount is equal to whatever the input
+		this.flavor = a;
+	}
+	//make a one layer cake if they don't tell how many layers to use
+	public Cake (String a)
+	{
+		//flavor of cake is equal to whatever they input
+		this.flavor = a;
+		//1 layer if they don't put number
+		this.layer = 1;
+	}
+	
+	//return flavor
+	public String tellFlavor()
+	{
+		//spit out flavor
+		return (this.flavor);
+	}
+	//return amount of layer
+	public int tellLayers()
+	{
+		//spit out amount of layers
+		return (this.layer);
+	}
+	//change the flavor of the cake
+	public void setFlavor(String newFlavor) 
+	{
+		//make flavor equal to the new flavor
+		this.flavor = newFlavor;
+	}
+	//always say the cake is bussin because cake is inherently good
+	public void yumCheck() 
+	{
+		//print the cake is good
+		System.out.println("This cake is bussin the ocky way!");
+	}
+	//add a layer to the cake
+	public void incrementLayer(int l) 
+	{
+		//add 1 to the amount of layers in the cake already
+		layer++;
+	}
+	}
