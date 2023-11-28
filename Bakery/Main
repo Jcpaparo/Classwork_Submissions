@@ -1,0 +1,49 @@
+/**
+*This class is the main class. It is used to
+*generate multiple baked goods that we will define
+*the behavior of in their own classes.
+*Here, all we'll do is create the baked goods.
+*And maybe print some info
+*/
+public class Bakery_Main 
+{
+
+	/**
+	 * The main method is a method that always runs
+	 * whenever the class is run. We don't need to
+	 * call its name. It just runs.
+	 * 
+	 * This is the method where we will instantiate
+	 * new baked goods
+	 * @param args (idk why this is needed)
+	 */
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		//instantiate first baked good, a pie
+		//Pie myPie = new Pie("Shrimp");
+		
+		//Pie mysecondPie  = new Pie("Steak");
+		//myPie.tellFlavor();
+		//mySecondPie.tellFlavor();
+		
+		Cake myCake = new Cake("Hot Dog", 6);
+		System.out.println(myCake.tellFlavor());
+		System.out.println(myCake.tellLayers());
+		myCake.setFlavor("Baboon");
+		System.out.println(myCake.tellFlavor());
+		myCake.yumCheck();
+		myCake.incrementLayer(0);
+		System.out.println(myCake.tellLayers());
+		
+		Cake mySample = new Cake("Hot Dog");
+		System.out.println(mySample.tellFlavor());
+		System.out.println(mySample.tellLayers());
+		mySample.setFlavor("Baboon");
+		System.out.println(mySample.tellFlavor());
+		mySample.yumCheck();
+		mySample.incrementLayer(0);
+		System.out.println(mySample.tellLayers()); 
+	}
+
+}
