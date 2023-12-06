@@ -1,0 +1,29 @@
+import java.util.Random;
+
+public class Math_stuffs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		multNums(6,7);
+		
+		int myInt = -4;
+		double myDub = -16.0;
+		double myAbs = Math.abs(myDub);
+		double mySqrt = Math.sqrt(myAbs);
+		System.out.println(mySqrt);
+		Random rn = new Random();
+		int answer = rn.nextInt(10) + 1;
+		System.out.println(answer);
+		
+	}
+
+	private static void multNums(int x, int y) {
+		//TODO Auto-generated method stub
+		int adder = x;
+		for (int i = 1; i < y; i++)
+		{
+			x *= adder;
+		}
+		System.out.println(x);
+	}
+}	
