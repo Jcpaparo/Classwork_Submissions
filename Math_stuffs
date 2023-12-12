@@ -1,29 +1,109 @@
 import java.util.Random;
 
-public class Math_stuffs {
+public class Math_Stuffs {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		multNums(6,7);
-		
-		int myInt = -4;
-		double myDub = -16.0;
-		double myAbs = Math.abs(myDub);
-		double mySqrt = Math.sqrt(myAbs);
-		System.out.println(mySqrt);
-		Random rn = new Random();
-		int answer = rn.nextInt(10) + 1;
-		System.out.println(answer);
-		
+
+	//generate random number [1-10]
+	Random rn = new Random();
+	int answer = rn.nextInt(10) + 1;
+
+	//print random number
+	System.out.println(answer);
+
+	//declare int with value of -36
+	int IntA = -36;
+
+	//declare int with value of 12
+	int IntB = 12;
+
+	//declare double with value of 100.0
+	double DubA = 100.0;
+
+	//declare double with value of 0.64
+	double DubB = 0.64;
+
+	//instantiate double with value of 100.0
+	Double DoubleA = 100.0;
+
+	//instantiate double with value of 0.64
+	Double DoubleB = 0.64;
+
+	//instantiate integer with value of -36
+	Integer IntegerA = -36;
+
+	//instantiate integer with value of 12
+	Integer IntegerB = 12;
+
+	//calls method that multiplies int
+	multNums(IntA,IntB);
+
+	//calls method that multiplies int objects
+	multNums(IntegerA, IntegerB);
+
+	//calls method that multiplies ints
+	//casts doubles as ints before multiplying
+	multNums((int) DubA, (int) DubB);
+
+	//calls method that multiplies ints
+	//finds int value of double before multiplying
+	multNums((DoubleA.intValue()), DoubleB.intValue());
+
+	//prints absolute value of an int
+	System.out.println(Math.abs(IntA));
+
+	//prints absolute value of an int object
+	System.out.println(Math.abs(IntegerB));
+
+	//prints absolute value of a double
+	System.out.println(Math.abs(DubA));
+
+	//prints absolute value of a double object
+	System.out.println(Math.abs(DoubleB));
+
+	//prints square root of a double
+	System.out.println(Math.sqrt(DubA));
+
+	//prints square root of a double object
+	System.out.println(Math.sqrt(DoubleB));
+
+	//prints the square root of the absolute value of an int
+	System.out.println(Math.sqrt(Math.abs(IntA)));
+
+	//prints the square root of the absolute value of an int object
+	System.out.println(Math.sqrt(Math.abs(IntegerB)));
+
+	//prints the value of one double raised to the value of another
+	System.out.println(Math.pow(DubA, DubB));
+
+	//prints the value of one int cast as double to the power of a double
+	System.out.println(Math.pow((double)IntB, DubA));
+
+	//prints the value of a double raised to an int value
+	System.out.println(Math.pow(DubA, IntB));
+
 	}
 
-	private static void multNums(int x, int y) {
-		//TODO Auto-generated method stub
-		int adder = x;
-		for (int i = 1; i < y; i++)
+	//method that multiplies one int by another
+	private static void multNums(int x, int y) 
+
 		{
-			x *= adder;
+
+		//declares an int for the multiplier
+		int adder = x;
+		//sets up for loop that runs as many times as y
+		for (int i = 1; i < y; i++)
+
+		{
+
+			//add x to itself
+			x += adder;
+
 		}
+
+		//print the final value when  the loop  cant run anymore
 		System.out.println(x);
-	}
-}	
+
+	}		
+	
