@@ -12,10 +12,22 @@ public class Student {
 	scienceGrade =  a;
 	mathGrade = b;
 	theologyGrade =  c;
-	gradeLevel = d;
+	gradeLevel = checkGrade(d);
 	name = e;
 		}
 		
+		private int checkGrade(int d) {
+			// TODO Auto-generated method stub
+			if ( d >= 1 && d <= 12)
+			{
+				return d;
+		}
+			else
+			{
+				return 0;
+			}
+		}
+
 		public double getGPA()
 		{
 			double GPA = (scienceGrade + mathGrade + theologyGrade) / 3;
