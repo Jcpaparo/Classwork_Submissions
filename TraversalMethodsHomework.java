@@ -1,3 +1,4 @@
+
 public class TraversalMethodsHomework {
 
 	public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class TraversalMethodsHomework {
 		
 		CheckThreeSame( arr3);
 	}
-
+	//Make a method that is passed an int array and returns whether or not the array has any even numbers in it.
 	public static boolean checkEven (int[] arr)
 	{
 		int trav;
@@ -36,7 +37,7 @@ public class TraversalMethodsHomework {
 		}
 		return false; 
 	}
-	
+	//Make a method that is passed an int array and returns whether or not the array has ALL even numbers in it.
 	public static boolean checkAllEven (int[] arr)
 	{
 		int count = 0;
@@ -55,7 +56,7 @@ public class TraversalMethodsHomework {
 		}
 		return false; 
 	}
-
+	//Make a method that is passed an array of doubles and returns a double that is equal to their average. 
 	private static double findAvg(double[] arr1) {
 		// TODO Auto-generated method stub
 		double count =  0;
@@ -66,7 +67,7 @@ public class TraversalMethodsHomework {
 		count = count/arr1.length;
 		return count;
 	}
-
+	//Make a method that is passed an int array and returns the highest value in that array.
 	private static int findHighest(int[] arr) {
 		// TODO Auto-generated method stub
 			int max = arr[0];
@@ -83,7 +84,7 @@ public class TraversalMethodsHomework {
 			return max;
 	}
 			
-			
+	//Make a method that is passed a double array and returns whether or not three consecutive doubles of the same value appear in the array.
 	public static boolean CheckThreeSame(double[] arr3) {
 		// TODO Auto-generated method stub
 		int trav = 0;
