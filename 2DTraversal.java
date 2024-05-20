@@ -1,16 +1,16 @@
 
-public class 2DTraversal
+public class 2DTraversal 
 {
 	public static void main(String[] args) 
 	{
-		//TASK 1
-		String[][] arr = {{"fl", "eh", "fl", "eh", "fl", "eh"},
-						  {"he", "qi", "he", "qi", "he", "qi"},
-						  {"dy", "ds", "dy", "ds", "dy", "ds"},
-						  {"fl", "eh", "fl", "eh", "fl", "eh"},
-						  {"he", "qi", "he", "qi", "he", "qi"},
-						  {"dy", "ds", "dy", "ds", "dy", "ds"},
-						  {"fl", "eh", "fl", "eh", "fl", "eh"}};
+		//Task 1
+		String[][] arr = {{"a", "b", "c", "d", "e", "f"},
+						  {"g", "h", "i", "j", "k", "l"},
+						  {"m", "n", "o", "p", "q", "r"},
+						  {"s", "t", "u", "v", "w", "x"},
+						  {"y", "z", "aa", "bb", "cc", "dd"},
+						  {"ee", "ff", "gg", "hh", "ii", "jj"},
+						  {"kk", "ll", "mm", "nn", "oo", "pp"}};
 		
 		//Task 3
 		for (int i = 0; i < arr.length; i++)
